@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.form{
+    /* background-color: #F2F2F2; */
+    min-width: 500px;
+    max-width: 500px;
+    min-height: 315px;
+    max-height: 315px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+.input{
+    
+    border: solid 1px white;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 30px;
+    font-size: 1rem;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+}
+.date{
+    width: 220px;
+    height: 40px;
+}
+.priority{
+    width: 220px;
+    height: 40px;
+}
+.add-task{
+    margin-top: 84px;
+}
+.addtask-button{
+    width: 500px;
+}
