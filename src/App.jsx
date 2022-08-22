@@ -3,16 +3,25 @@ import './App.css';
 import TaskForm from './components/TaskForm';
 import TaskList from './components/TaskList';
 
+import tasksList from './task';
+
 function App() {
-	const [count, setCount] = useState(0);
+	const [tasks, setTasks] = useState(tasksList);
+	console.log(tasks);
+
+	const addTask = (task) => {
+		console.log('new task ' , task);
+		task.id = Math.random();
+		setTasks([...tasks, task]);
+	};
 
 	return (
 		<div className='App'>
 			<div className='task-form'>
-				<TaskForm />
+				<TaskForm addTask={addTask} />
 			</div>
 			<div className='tasks-list'>
-				<TaskList />
+				<TaskList tasks={tasks} />
 			</div>
 		</div>
 	);

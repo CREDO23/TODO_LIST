@@ -1,15 +1,15 @@
 import React from 'react';
 import { FaRegTrashAlt } from 'react-icons/fa';
 
-const Task = () => {
+const Task = ({task}) => {
 	return (
 		<div className='firstTaskdiv'>
 			<div className='titleAndDate'>
-				<h3 className='taskTitle'> Reviser React</h3>
-				<span className='dayTask'>Monday, 10h15</span>
+				<h3 className='taskTitle'>{task.title}</h3>
+				<span className='dayTask'>{task.date}</span>
 			</div>
 			<div className='descriptionAndDelete'>
-				<p> Dom virtuel, React Router, les props et States </p>
+				<p> {task.description}</p>
 				<button className='iconDelete'>
 					<FaRegTrashAlt />
 				</button>
