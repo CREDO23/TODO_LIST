@@ -1,16 +1,11 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 .form{
-    /* background-color: #F2F2F2; */
-    min-width: 500px;
-    max-width: 500px;
+    width: 100%;
     min-height: 315px;
     max-height: 315px;
 }
 .inputs{
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 36px;
