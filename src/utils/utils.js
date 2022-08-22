@@ -1,11 +1,22 @@
 /** @format */
+
+import task from '../task';
+
 const addTask = (title, description, date, priority) => {
-	return {
+	task.push({
+		id: task.length + 1,
 		title,
 		description,
 		date,
 		priority,
-	};
+	});
 };
 
-export default addTask;
+const removeTask = (id) => {
+	task.filter((task) => task.id != id);
+};
+
+module.exports = {
+	addTask,
+	removeTask,
+};
