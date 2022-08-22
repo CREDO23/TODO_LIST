@@ -9,5 +9,17 @@
 {
     display: flex;
     justify-content: space-between;
-    
+    gap: 50px;
+
+}
+
+.dayTask
+{
+margin-top: 21px;
+}
+
+.iconDelete
+{
+margin-top: 17px;
+
 }
