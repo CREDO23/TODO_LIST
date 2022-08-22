@@ -11,29 +11,51 @@
     gap: 36px;
 }
 .input{
-    
+    outline: none;
     border: solid 1px white;
     height: 40px;
     border-radius: 10px;
     padding-left: 30px;
     font-size: 1rem;
 }
+input:active{
+    border: 1px solid rgba(0, 153, 255, 0.894);  
+}
 .buttons{
     display: flex;
     justify-content: space-between;
     margin-top: 36px;
 }
-.date{
-    width: 220px;
-    height: 40px;
-}
-.priority{
-    width: 220px;
-    height: 40px;
-}
+
 .add-task{
     margin-top: 84px;
 }
 .addtask-button{
+    outline: none;
     width: 500px;
+    color: rgba(97, 86, 86, 0.808);
 }
+.addtask-button:active{
+    border: 1px solid rgba(0, 153, 255, 0.894);   
+}
+.inputDate, .selectPriority {
+    outline: none;
+    align-items: center;
+    appearance: none;
+    width: 220px;
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid white;
+    font-size: 1rem;
+    color: rgba(97, 86, 86, 0.808);
+    cursor: pointer;
+}
+.inputDate:active , .selectPriority:active{
+    border: 1px solid rgba(0, 153, 255, 0.894);
+}
+.selectPriority{
+    padding-left: 40px;
+}
+
