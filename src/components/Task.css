@@ -1,6 +1,6 @@
 .firstTaskdiv {
     width: 600px;
-    height: 100px;
+    height: 105px;
     border-radius: 10px;
     margin: 10px auto;
     padding: 15px;
@@ -16,7 +16,7 @@
 .titleAndDate {
     display: flex;
     justify-content: space-between;
-    margin-right: 25px;
+    margin-right: 20px;
 }
 
 .descriptionAndDelete {
@@ -34,5 +34,12 @@
 .iconDelete 
 {
 margin: auto;
+}
+
+.descriptionTask
+{
+    margin-bottom: 1px;
+    margin-top: 2px;
+    font-size: 12px;
 }
 
