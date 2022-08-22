@@ -13,21 +13,27 @@
 	background-color: #f9f9f9;
 }
 
+
 .titleAndDate {
-	display: flex;
-	justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 25px;
 }
 
 .descriptionAndDelete {
-	display: flex;
-	justify-content: space-between;
-	gap: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+
 }
 
-.dayTask {
-	margin-top: 21px;
+.dayTask 
+{
+    margin-top: 21px;
 }
 
-.iconDelete {
-	margin-top: 17px;
+.iconDelete 
+{
+margin: auto;
 }
+

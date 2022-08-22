@@ -10,9 +10,9 @@ const Task = () => {
 			</div>
 			<div className='descriptionAndDelete'>
 				<p> Dom virtuel, React Router, les props et States </p>
-				<span className='iconDelete'>
+				<button className='iconDelete'>
 					<FaRegTrashAlt />
-				</span>
+				</button>
 			</div>
 		</div>
 	);
