@@ -1,16 +1,20 @@
 import React from 'react';
 import { FaRegTrashAlt } from 'react-icons/fa';
 
-const Task = () => {
+const Task = ({ task, onDelete }) => {
+	let borderColor;
+	if (task.priority == 1) borderColor = 'red';
+	else if (task.priority == 2) borderColor = ' yellow';
+	else borderColor = ' green';
 	return (
-		<div className='firstTaskdiv'>
+		<div className='firstTaskdiv' style={{ borderLeftColor: borderColor }}>
 			<div className='titleAndDate'>
-				<h3 className='taskTitle'> Reviser React</h3>
-				<span className='dayTask'>Monday, 10h15</span>
+				<h3 className='taskTitle'>{task.title}</h3>
+				<span className='dayTask'>{task.date}</span>
 			</div>
 			<div className='descriptionAndDelete'>
-				<p> Dom virtuel, React Router, les props et States </p>
-				<button className='iconDelete'>
+				<p> {task.description}</p>
+				<button className='iconDelete' onClick={() => onDelete(task.id)}>
 					<FaRegTrashAlt />
 				</button>
 			</div>

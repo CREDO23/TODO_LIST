@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import Task from './Task';
-import './Task.css'
-
-import  tasksList  from '../task'
-// 
-const TaskList = () => {
-	const [task , setTsak] = useState([])
-	
-	return <div>
-		<div >
-			{task.map(function (task, index) {
-				return <Task task={task} key={index} />;
-			})}
+import './Task.css';
+//
+const TaskList = ({ tasks, deleteTask }) => {
+	console.log(tasks);
+	return (
+		<div>
+			<div>
+				{tasks &&
+					tasks.map(function (task, index) {
+						return <Task task={task} key={index} onDelete={deleteTask} />;
+					})}
+			</div>
 		</div>
-	</div>;
+	);
 };
 
 export default TaskList;
