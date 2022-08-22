@@ -3,7 +3,7 @@ import { FaRegTrashAlt } from "react-icons/fa";
 
 const Task =() => {
     return(
-        <div firstTaskdiv>
+        <div className='firstTaskdiv'>
         <div className='titleAndDate'>
        <h3 className='taskTitle'> Reviser React</h3>
        <span className='dayTask'>Monday, 10h15</span>

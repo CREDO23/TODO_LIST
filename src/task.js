@@ -1,4 +1,4 @@
-const tasksList = [
+export const tasksList = [
     {
         id:1,
         title:'Learn React .',
