@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Task from './Task';
 import './Task.css'
 
-import { tasksList } from '../task'
+import  tasksList  from '../task'
 // 
 const TaskList = () => {
+	const [task , setTsak] = useState([])
+	
 	return <div>
 		<div >
-			{tasksList.map(function (task, index) {
+			{task.map(function (task, index) {
 				return <Task task={task} key={index} />;
 			})}
 		</div>
