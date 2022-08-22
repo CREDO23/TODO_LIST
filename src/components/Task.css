@@ -1,41 +1,33 @@
-.firstTaskdiv
-{
-    width: 600px;
-    height: 100px;
-    border-radius: 10px;
-    margin: 10px auto;
- padding: 15px;
- padding-top: 5px;
-    border: solid 10px;
-    border-right: none;
-    border-top: none;
-    border-bottom: none;
-    border-left-color: #043F8C;
-    background-color: #f9f9f9;
+.firstTaskdiv {
+	width: 600px;
+	height: 100px;
+	border-radius: 10px;
+	margin: 10px auto;
+	padding: 15px;
+	padding-top: 5px;
+	border: solid 10px;
+	border-right: none;
+	border-top: none;
+	border-bottom: none;
+	border-left-color: #043f8c;
+	background-color: #f9f9f9;
 }
 
-.titleAndDate
-{
-    display: flex;
-    justify-content: space-between;
-
+.titleAndDate {
+	display: flex;
+	justify-content: space-between;
 }
 
-.descriptionAndDelete
-{
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
-
+.descriptionAndDelete {
+	display: flex;
+	justify-content: space-between;
+	gap: 50px;
 }
 
-.dayTask
-{
-margin-top: 21px;
+.dayTask {
+	margin-top: 21px;
 }
 
-.iconDelete
-{
-margin-top: 17px;
-
+.iconDelete {
+	margin-top: 17px;
 }
