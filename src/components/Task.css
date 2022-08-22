@@ -1,16 +1,16 @@
 .firstTaskdiv {
-	width: 600px;
-	height: 100px;
-	border-radius: 10px;
-	margin: 10px auto;
-	padding: 10px;
-	padding-top: 10px;
-	border: solid 10px;
-	border-right: none;
-	border-top: none;
-	border-bottom: none;
-	border-left-color: #043f8c;
-	background-color: #f9f9f9;
+    width: 600px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 10px;
+    padding-top: 10px;
+    border: solid 10px;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    border-left-color: #043f8c;
+    background-color: #f9f9f9;
 }
 
 
@@ -31,21 +31,27 @@
 }
 
 .descriptionAndDelete button {
-   width: 40px;
-   height: 40px;
-   margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
 }
 
-.dayTask 
-{
+.dayTask {
     margin-top: 21px;
 }
 
 .iconDelete {
-   justify-content: center;
-   color: red;
+    justify-content: center;
+    color: red;
 }
 
 .iconDelete svg {
-   margin: auto;
+    margin: auto;
+}
+
+@media screen and (max-width: 767px) {
+    .firstTaskdiv {
+        width: 100%;
+    }
+
 }
