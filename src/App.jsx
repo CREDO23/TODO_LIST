@@ -6,13 +6,15 @@ import TaskList from './components/TaskList';
 import tasksList from './task';
 
 function App() {
-	const [tasks, setTasks] = useState(tasksList);
-	console.log(tasks);
+	const [tasks, setTasks] = useState([]);
 
 	const addTask = (task) => {
-		console.log('new task ' , task);
 		task.id = Math.random();
 		setTasks([...tasks, task]);
+	};
+
+	const deleteTask = (id) => {
+		 setTasks(tasks.filter((task) => task.id !== id));
 	};
 
 	return (
@@ -21,7 +23,7 @@ function App() {
 				<TaskForm addTask={addTask} />
 			</div>
 			<div className='tasks-list'>
-				<TaskList tasks={tasks} />
+				<TaskList tasks={tasks} deleteTask={deleteTask} />
 			</div>
 		</div>
 	);

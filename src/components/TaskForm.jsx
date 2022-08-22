@@ -2,7 +2,6 @@ import React from 'react';
 import '../Styles/taskForm.css';
 import { AiOutlinePlusCircle } from 'react-icons/ai';
 import { useState } from 'react';
-import { addTask } from '../utils/utils';
 
 const TaskForm = ({ addTask }) => {
 	const [title, setTitle] = useState('');
