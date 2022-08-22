@@ -3,16 +3,27 @@ import './App.css';
 import TaskForm from './components/TaskForm';
 import TaskList from './components/TaskList';
 
+import tasksList from './task';
+
 function App() {
-	const [count, setCount] = useState(0);
+	const [tasks, setTasks] = useState([]);
+
+	const addTask = (task) => {
+		task.id = Math.random();
+		setTasks([...tasks, task]);
+	};
+
+	const deleteTask = (id) => {
+		 setTasks(tasks.filter((task) => task.id !== id));
+	};
 
 	return (
 		<div className='App'>
 			<div className='task-form'>
-				<TaskForm />
+				<TaskForm addTask={addTask} />
 			</div>
 			<div className='tasks-list'>
-				<TaskList />
+				<TaskList tasks={tasks} deleteTask={deleteTask} />
 			</div>
 		</div>
 	);
