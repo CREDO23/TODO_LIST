@@ -1,16 +1,17 @@
-
-.form{
+.form {
     width: 100%;
     min-height: 315px;
     max-height: 315px;
 }
-.inputs{
+
+.inputs {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 36px;
 }
-.input{
+
+.input {
     outline: none;
     border: solid 1px white;
     height: 40px;
@@ -18,27 +19,33 @@
     padding-left: 30px;
     font-size: 1rem;
 }
-input:active{
-    border: 1px solid rgba(0, 153, 255, 0.894);  
+
+input:active {
+    border: 1px solid rgba(0, 153, 255, 0.894);
 }
-.buttons{
+
+.buttons {
     display: flex;
     justify-content: space-between;
     margin-top: 36px;
 }
 
-.add-task{
+.add-task {
     margin-top: 84px;
 }
-.addtask-button{
+
+.addtask-button {
     outline: none;
     width: 500px;
     color: rgba(97, 86, 86, 0.808);
 }
-.addtask-button:active{
-    border: 1px solid rgba(0, 153, 255, 0.894);   
+
+.addtask-button:active {
+    border: 1px solid rgba(0, 153, 255, 0.894);
 }
-.inputDate, .selectPriority {
+
+.inputDate,
+.selectPriority {
     outline: none;
     align-items: center;
     appearance: none;
@@ -52,10 +59,64 @@ input:active{
     color: rgba(97, 86, 86, 0.808);
     cursor: pointer;
 }
-.inputDate:active , .selectPriority:active{
+
+.inputDate:active,
+.selectPriority:active {
     border: 1px solid rgba(0, 153, 255, 0.894);
 }
-.selectPriority{
+
+.selectPriority {
     padding-left: 40px;
 }
 
+@media screen and (max-width: 767px) {
+    .form {
+        box-sizing: border-box;
+        width: 100vw;
+    }
+
+    .inputDate,
+    .selectPriority {
+        outline: none;
+        appearance: none;
+        width: 30%;
+        padding: 10px;
+        padding-left: 10px;
+        border-radius: 10px;
+        background-color: white;
+        border: 1px solid white;
+        font-size: 1rem;
+        color: rgba(97, 86, 86, 0.808);
+        cursor: pointer;
+    }
+
+    .addtask-button {
+        display: block;
+        outline: none;
+        width: 80vw;
+        color: rgba(97, 86, 86, 0.808);
+        margin: auto;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 36px;
+    }
+
+    .selectPriority {
+        padding-left: 0px;
+    }
+
+    .inputs {
+        display: block;
+        margin: auto;
+        box-sizing: border-box;
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+
+    }
+
+}

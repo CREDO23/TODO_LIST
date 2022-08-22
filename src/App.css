@@ -1,27 +1,29 @@
-*{
+* {
   padding: 0;
   margin: 0;
 }
 
 .App {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 20px;
 
-	width: 100vw;
-	min-height: 100vh;
+  width: 100vw;
+  min-height: 100vh;
 }
 
 .task-form,
 .tasks-list {
-	max-width: 50%;
+  max-width: 50%;
   min-width: 400px;
-	height: 100%;
+  height: 100%;
   padding: 20px;
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+@media screen and (max-width: 767px) {}
