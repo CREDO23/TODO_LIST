@@ -51,7 +51,8 @@
 
 @media screen and (max-width: 767px) {
     .firstTaskdiv {
-        width: 100%;
+        width: 80vw;
+        height: 70px;
     }
 
 }

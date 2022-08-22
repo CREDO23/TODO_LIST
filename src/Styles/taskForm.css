@@ -78,9 +78,8 @@ input:active {
     .inputDate,
     .selectPriority {
         outline: none;
-        align-items: left;
         appearance: none;
-        width: 40%;
+        width: 30%;
         padding: 10px;
         padding-left: 10px;
         border-radius: 10px;
@@ -94,7 +93,7 @@ input:active {
     .addtask-button {
         display: block;
         outline: none;
-        width: 70vw;
+        width: 80vw;
         color: rgba(97, 86, 86, 0.808);
         margin: auto;
     }
@@ -110,12 +109,14 @@ input:active {
     }
 
     .inputs {
+        display: block;
+        margin: auto;
         box-sizing: border-box;
-        width: 100%;
+        width: 80vw;
         display: flex;
         flex-direction: column;
         gap: 36px;
-        padding: 20px;
+
     }
 
 }
