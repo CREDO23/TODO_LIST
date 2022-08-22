@@ -1,4 +1,4 @@
-export const tasksList = [
+ const tasksList = [
     {
         id:1,
         title:'Learn React .',
@@ -84,3 +84,5 @@ export const tasksList = [
         priority : 'hight'
     }
 ]
+
+export default tasksList
