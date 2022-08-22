@@ -1,6 +1,6 @@
 import React from 'react'
 import '../Styles/taskForm.css'
-//import {AiOutlinePlusCircle} from 'react-icons/ai'
+import {AiOutlinePlusCircle} from 'react-icons/ai'
 
 
 const TaskForm = () => {
@@ -17,7 +17,7 @@ const TaskForm = () => {
             </div>
             <div className="add-task">
                 <button className='addtask-button'>
-                    Add a task
+                    <AiOutlinePlusCircle/> Add a task
                 </button>
             </div>
         </div>
