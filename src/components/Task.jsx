@@ -1,8 +1,20 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { FaRegTrashAlt } from "react-icons/fa";
 
-const Task = (props) => {
-	return <div>Task</div>;
-};
+const Task =() => {
+    return(
+        <div firstTaskdiv>
+        <div className='titleAndDate'>
+       <h3 className='taskTitle'> Reviser React</h3>
+       <span className='dayTask'>Monday, 10h15</span>
+       </div>
+       <div className='descriptionAndDelete'>
+       <p> Dom virtuel, React Router, les props et States </p>
+       <span className='iconDelete'><FaRegTrashAlt/></span>
+        </div>
+        </div>
+    )
+}
+    
 
 export default Task;
