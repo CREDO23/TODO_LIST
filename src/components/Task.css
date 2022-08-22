@@ -1,0 +1,13 @@
+.titleAndDate
+{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.descriptionAndDelete
+{
+    display: flex;
+    justify-content: space-between;
+    
+}
