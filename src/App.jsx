@@ -5,15 +5,15 @@ import TaskList from './components/TaskList';
 import credo from '../src/Styles'
 function App() {
     const [tasks, setTasks] = useState([]);
-	
-						const addTask = (task) => {
-							task.id = Math.random();
-							setTasks([...tasks, task]);
-						};
+			
+								const addTask = (task) => {
+									task.id = Math.random();
+									setTasks([...tasks, task]);
+								};
 
-						const deleteTask = (id) => {
-							setTasks(tasks.filter((task) => task.id !== id));
-						};
+								const deleteTask = (id) => {
+									setTasks(tasks.filter((task) => task.id !== id));
+								};
 
     return (
         <div className="App">
